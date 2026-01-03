@@ -2,7 +2,7 @@
 .settings/
 .vscode/
 *.code-workspace
-sdkconfig.esp32-c6-devkitm-1.old
+sdkconfig.esp32-c3-devkitm-1.old
 sdkconfig.local
 sdkconfig*.local
 !sdkconfig_example.local

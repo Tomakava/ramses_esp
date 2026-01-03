@@ -8,7 +8,7 @@ endif()
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
-project(ramses_esp_c6)
+project(ramses_esp_c3)
 
 # (Legacy / future) extra Kconfig includes can be appended here if needed
 list(APPEND kconfigs "${CMAKE_SOURCE_DIR}/lib/cc1101/Kconfig.projbuild")

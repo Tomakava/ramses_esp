@@ -4,9 +4,9 @@ menu "RAMSES_ESP configuration"
     config RADIO_CORE
       int "Core for Radio Task"
       range 0 1 if IDF_TARGET_ESP32S3
-      range 0 0 if IDF_TARGET_ESP32C6
+      range 0 0 if IDF_TARGET_ESP32C3
       default 1 if IDF_TARGET_ESP32S3
-      default 0 if IDF_TARGET_ESP32C6
+      default 0 if IDF_TARGET_ESP32C3
       help
         The Radio task will run on this core.
 
@@ -14,16 +14,16 @@ menu "RAMSES_ESP configuration"
       int "Core for Host Task"
       range 0 1
       default 0 if IDF_TARGET_ESP32S3
-      default 0 if IDF_TARGET_ESP32C6
+      default 0 if IDF_TARGET_ESP32C3
       help
         The Host task will run on this core.
 
     config FUNCTION_PIN
       int "Function Button GPIO pin"
       range 0 48 if IDF_TARGET_ESP32S3
-      range 0 23 if IDF_TARGET_ESP32C6
+      range 0 23 if IDF_TARGET_ESP32C3
       default 0 if IDF_TARGET_ESP32S3
-      default 9 if IDF_TARGET_ESP32C6
+      default 9 if IDF_TARGET_ESP32C3
       help
         GPIO pin number of Function Button
 
@@ -31,7 +31,7 @@ menu "RAMSES_ESP configuration"
       int "CS Pin"
       range 0 41
       default 12 if IDF_TARGET_ESP32S3
-      default 23 if IDF_TARGET_ESP32C6
+      default 23 if IDF_TARGET_ESP32C3
       help
         GPIOx for CS Platform
 

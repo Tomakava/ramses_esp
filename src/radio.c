@@ -15,7 +15,7 @@ static const char* TAG = "RADIO";
 
 #include "frame.h"
 #include "message.h"
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C3
 #include "esp_task_wdt.h"
 #endif
 #include "radio.h"
@@ -37,11 +37,11 @@ void Radio_Task(void* arg)
     msg_init();
     while (1) {
         frame_work();
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C3
         //vTaskDelay(pdMS_TO_TICKS(1));
 #endif
         msg_work();
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C3
         //vTaskDelay(pdMS_TO_TICKS(1));
 #endif
     }

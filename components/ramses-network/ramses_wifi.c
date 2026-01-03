@@ -369,7 +369,7 @@ static void Wifi(void* param)
             if (msg.msgFunc)
                 (msg.msgFunc)(ctxt, &msg.param);
         }
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C3
         vTaskDelay(pdMS_TO_TICKS(1));
 #endif
     } while (1);

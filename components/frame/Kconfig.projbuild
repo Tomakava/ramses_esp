@@ -44,7 +44,7 @@ menu "Frame Configuration"
     choice UART_NUM
         prompt "UART number selection"
         default UART_NUM_1 if IDF_TARGET_ESP32S3
-        default UART_NUM_1 if IDF_TARGET_ESP32C6
+        default UART_NUM_1 if IDF_TARGET_ESP32C3
         help
             Select the UART number for your board
         config UART_NUM_0
@@ -56,7 +56,7 @@ menu "Frame Configuration"
     choice BAUD_RATE
         prompt "Baud rate selection"
         default RATE_38400 if IDF_TARGET_ESP32S3
-        default RATE_38400 if IDF_TARGET_ESP32C6
+        default RATE_38400 if IDF_TARGET_ESP32C3
         help
             Select the UART number for your board
         config RATE_38400

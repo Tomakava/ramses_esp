@@ -212,7 +212,7 @@ void cmd_work(struct cmd_data* data)
                 ESP_LOGI(TAG, "Internal error: %s\n", esp_err_to_name(err));
             }
         }
-#if CONFIG_IDF_TARGET_ESP32C6
+#if CONFIG_IDF_TARGET_ESP32C3
         vTaskDelay(pdMS_TO_TICKS(1));
 #endif
     } while (1);
